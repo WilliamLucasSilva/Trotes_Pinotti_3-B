@@ -1,12 +1,16 @@
+import trotes from ./trotes.js
+
 let troteSection = document.getElementById('trotes')
 
 
 
 function start(){
     troteSection.innerHTML = creatContent()
+    trotes.forEach((t) => {console.log(t)})
 }
 
-function creatContent(trote){
+/*function creatContent(trote){
+
     let troteContent = `
     <div>
         <h3 id = "${trote.title}"> ${trote.title} </h3>
@@ -17,7 +21,7 @@ function creatContent(trote){
     </div>
     `
     return troteContent
-}
+}*/
 
 
 start()
